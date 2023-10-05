@@ -6,7 +6,7 @@ export class NewsItem extends Component {
 
     const {tittle,desc,srcImage,img}= this.props;
     return (
-        <div className="card my-3 mx-3" style={{width :'20rem'}}>
+        <div className="card my-3 mx-3">
         <img src={srcImage?srcImage:"https://techcrunch.com/wp-content/uploads/2023/10/induced-ai.jpg?resize=1200,900"}
          className="card-img-top" alt="..."/>
         <div className="card-body">
