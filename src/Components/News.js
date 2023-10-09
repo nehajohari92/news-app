@@ -63,7 +63,7 @@ export class News extends Component {
     }
   render() {
     return (
-      <div className='container my-3 mx-3 text-center'>
+      <div className='container my-3 mx-3'>
 
         <h1 className='text-center my-3'>Daily News Update</h1>
         {this.state.loading && <Sipnner/>}
@@ -72,7 +72,7 @@ export class News extends Component {
                return <div className='col-md-4'>
                     <NewsItem key={element.url} tittle={element.title?element.title.slice(0,50):""} 
                                 desc={element.description?element.description.slice(0,88):""} 
-                                srcImage={element.urlToImage} img={element.url}/>
+                                srcImage={element.urlToImage} img={element.url} author={element.author} date={element.publishedAt}/>
                 </div>
             })}
         </div>
