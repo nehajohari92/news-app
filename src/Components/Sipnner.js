@@ -4,8 +4,8 @@ import loading from './loading.gif'
 export class Sipnner extends Component {
   render() {
     return (
-      <div>
-        <img src={loading} alt='Loading'></img>
+      <div className='text-center my-3'>
+        <img className='my-3' src={loading} alt='Loading'></img>
       </div>
     )
   }
