@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     const { tittle, desc, srcImage, img, author, date, source } = this.props;
     return (
       <div className="card my-3 mx-3">
-        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span className="position-absolute start-100 translate-middle badge rounded-pill bg-danger">
           {source}
           <span className="visually-hidden">unread messages</span>
         </span>
